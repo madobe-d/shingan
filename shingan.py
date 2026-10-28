@@ -21,19 +21,19 @@ class Game:
 
     #アプリを更新する
     def update(self):
-        if pyxel.btn(pyxel.KEY_RIGHT):
+        if pyxel.btn(pyxel.KEY_RIGHT) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT):
             pyxel.cls(0)
             pyxel.text(43,50,"右かな？ ", 7, font)
 
-        elif pyxel.btn(pyxel.KEY_LEFT):
+        elif pyxel.btn(pyxel.KEY_LEFT) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT):
             pyxel.cls(0)
             pyxel.text(43, 50, "左だ！", 7, font)
 
-        elif pyxel.btn(pyxel.KEY_UP):
+        elif pyxel.btn(pyxel.KEY_UP) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_UP):
             pyxel.cls(0)
             pyxel.text(43, 50, "上でしょ！", 7, font)
 
-        elif pyxel.btn(pyxel.KEY_DOWN):
+        elif pyxel.btn(pyxel.KEY_DOWN) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DAPD_DOWN):
             pyxel.cls(0)
             pyxel.text(43, 50, "うーん、下！", 7, font)
 
