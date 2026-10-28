@@ -33,7 +33,7 @@ class Game:
             pyxel.cls(0)
             pyxel.text(43, 50, "上でしょ！", 7, font)
 
-        elif pyxel.btn(pyxel.KEY_DOWN) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DAPD_DOWN):
+        elif pyxel.btn(pyxel.KEY_DOWN) or pyxel.btn(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN):
             pyxel.cls(0)
             pyxel.text(43, 50, "うーん、下！", 7, font)
 
